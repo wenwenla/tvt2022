@@ -1,0 +1,6 @@
+*.pyc
+build/*
+cppenv.egg-info/*
+dist/*
+.ipynb_checkpoints/*
+0226/*
