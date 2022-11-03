@@ -3,8 +3,8 @@
 ## A quick guide to install the environment (Flocking - RL).
 
 1. `apt update && apt install swig` (The version `SWIG Version 4.0.1` is ok.)
-2. cd env_wrapper
-3. ./reinstall
+2. `cd env_wrapper`
+3. `./reinstall`
 
 The c++ implementation of the environment is placed in env_wrapper. 
 
