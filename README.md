@@ -1,10 +1,19 @@
 # tvt2022
 
-## A quick guide to install the environment (Flocking - RL).
+- A quick guide to install the environment (Flocking - RL).
 
 1. `apt update && apt install swig` (The version `SWIG Version 4.0.1` is ok.)
 2. `cd env_wrapper`
 3. `./reinstall`
+
+---
+
+- A quick guide to train td3 agent.
+
+Some python packages may be needed, pls install these packages by `pip install`. (e.g. `pip install torch`), and then
+
+1. `python td3_fast.py --agents=16 --folder=./logs --global_="GLOBAL"`
+
 
 The c++ implementation of the environment is placed in env_wrapper. 
 
