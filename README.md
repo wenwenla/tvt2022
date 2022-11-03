@@ -14,6 +14,7 @@ Some python packages may be needed, pls install these packages by `pip install`.
 
 1. `python td3_fast.py --agents=16 --folder=./logs --global_="GLOBAL"`
 
+---
 
 The c++ implementation of the environment is placed in env_wrapper. 
 
