@@ -1,7 +1,6 @@
 import numpy as np
 from PIL import Image
 
-from ray.rllib import MultiAgentEnv
 from utils import *
 from cppenv import env as cpp_env
 
@@ -61,7 +60,7 @@ class ManyUavEnv:
             self._viewer.close()
 
 
-class EnvWrapper(MultiAgentEnv):
+class EnvWrapper:
 
     def __init__(self, n_agents):
         self._env = ManyUavEnv(n_agents, 123)

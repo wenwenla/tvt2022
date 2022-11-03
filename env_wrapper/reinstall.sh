@@ -5,5 +5,5 @@ rm cppenv/env_wrap.cpp
 rm cppenv/env.py
 pip uninstall cppenv -y
 
-python setup.py build
-python setup.py install
+python3 setup.py build
+python3 setup.py install

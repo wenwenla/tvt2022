@@ -84,7 +84,7 @@ class EvalAgent:
             time_steps += 1
             next_states, rewards, done, info = self._env.step(actions)
             time_steps += 1
-            self._env.render()
+            # self._env.render()
             for seq in enum_seq:
                 total_rew[seq] += rewards[seq]
             states = next_states
@@ -133,9 +133,9 @@ def get_bst_path(n_agents, folder):
 
 
 def evaluate():
-    agent = EvalAgent(32)
-    agent.setGlobal(False)
-    agent.load('./new_version/16601_l_32.pkl')
+    agent = EvalAgent(16)
+    agent.setGlobal(True)
+    agent.load('./0226/gy2/td3_16/models/38201.pkl')
 
     ta, die, dtc = [], [], []
     for i in range(100):
@@ -144,6 +144,7 @@ def evaluate():
         ta.append(_ta)
         die.append(_die)
         dtc.append(_dtc)
+        print(_r)
     print(f'MeanTA: {np.mean(ta)}±{np.std(ta)}')
     print(f'MeanDie: {np.mean(die)}±{np.std(die)}')
     with open('new_version/l32_data.pkl', 'wb') as f:

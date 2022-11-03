@@ -1,7 +1,7 @@
 from setuptools import Extension, setup, find_packages
 
 RUN_EXT = Extension(
-    name='_env',
+    name='cppenv._env',
     sources=[
         'cppenv/env.cpp',
         'cppenv/env.i'
