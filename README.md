@@ -16,7 +16,7 @@ Some python packages may be needed, pls install these packages by `pip install`.
 
 ---
 
-If you find this work is helpful at some aspects, please considering cite our paper:
+If you find this work is helpful at some aspects, please consider cite our paper:
 
 W. Wang, L. Wang, J. Wu, X. Tao and H. Wu, "Oracle-Guided Deep Reinforcement Learning for Large-Scale Multi-UAVs Flocking and Navigation," in IEEE Transactions on Vehicular Technology, vol. 71, no. 10, pp. 10280-10292, Oct. 2022, doi: 10.1109/TVT.2022.3184043.
 
